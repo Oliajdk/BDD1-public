@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BDD1</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        
+            .content {
+                float:left;
+               
+            }
+            .pull-right{
+                float:right;
+                background-color: azure;
+                margin: 20px;
+            }   
+            .pull-left{
+                float:left;
+                background-color:aliceblue;
+                margin: 20px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="content">
+        <h1>BDD1</h1>
+        <span class="pull-right">
+        <table>
+            <thead>
+                
+                <tr>ouvrage00</tr>
+                
+            <tr>
+                
+                <th>codeouvrage</th>
+                <th>domaineprincipal</th>
+            </tr>
+            </thead>
+            <tbody>
+                    {% for row in data00 %} 
+                    <tr>
+                        <td>{{row[0]}}</td>
+                        <td>{{row[1]}}</td>
+
+                    </tr>
+                {% endfor %}        
+            </tbody>
+        </br>
+        </table>
+        <table>
+            <thead>
+                
+                <tr>ouvrage01</tr>
+            <tr>
+                <th>codeouvrage</th>
+                <th>titreouvrage</th>
+            </tr>
+            </thead>
+            <tbody>
+                    {% for row in data01 %} 
+                    <tr>
+                        <td>{{row[0]}}</td>
+                        <td>{{row[1]}}</td>
+
+                    </tr>
+                {% endfor %}        
+            </tbody>
+        </br>
+        </table>
+        <table>
+            <thead>
+                
+                <tr>ouvrage02</tr>
+            <tr>
+                <th>codeouvrage</th>
+                
+            </tr>
+            </thead>
+            <tbody>
+                    {% for row in data02 %} 
+                    <tr>
+                        <td>{{row[0]}}</td>
+                        
+
+                    </tr>
+                {% endfor %}        
+            </tbody>
+        </br>
+        </table>        
+        <table>
+            <thead>
+                
+                <tr>ouvrage03</tr>
+            <tr>
+                <th>codeouvrage</th>
+                <th>maisondedition</th>
+            </tr>
+            </thead>
+            <tbody>
+                    {% for row in data03 %} 
+                    <tr>
+                        <td>{{row[0]}}</td>
+                        <td>{{row[1]}}</td>
+
+                    </tr>
+                {% endfor %}        
+            </tbody>
+        </br>
+        </table>        
+    </span>
+    <span class="pull-left">
+        <table>
+            <thead>
+                
+                <tr>ouvrage20</tr>
+            <tr>
+                <th>codeouvrage</th>
+                <th>domaineprincipal</th>
+            </tr>
+            </thead>
+            <tbody>
+                    {% for row in data20 %} 
+                    <tr>
+                        <td>{{row[0]}}</td>
+                        <td>{{row[1]}}</td>
+
+                    </tr>
+                {% endfor %}        
+            </tbody>
+        </br>
+        </table>
+        <table>
+            <thead>
+                
+                <tr>ouvrage21</tr>
+            <tr>
+                <th>codeouvrage</th>
+                <th>titreouvrage</th>
+            </tr>
+            </thead>
+            <tbody>
+                    {% for row in data21 %} 
+                    <tr>
+                        <td>{{row[0]}}</td>
+                        <td>{{row[1]}}</td>
+
+                    </tr>
+                {% endfor %}        
+            </tbody>
+        </br>
+        </table>
+        <table>
+            <thead>
+                
+                <tr>ouvrage22</tr>
+            <tr>
+                <th>codeouvrage</th>
+                
+            </tr>
+            </thead>
+            <tbody>
+                    {% for row in data22 %} 
+                    <tr>
+                        <td>{{row[0]}}</td>
+                        
+
+                    </tr>
+                {% endfor %}        
+            </tbody>
+        </br>
+        </table>        
+        <table>
+            <thead>
+                
+                <tr>ouvrage23</tr>
+            <tr>
+                <th>codeouvrage</th>
+                <th>maisondedition</th>
+            </tr>
+            </thead>
+            <tbody>
+                    {% for row in data23 %} 
+                    <tr>
+                        <td>{{row[0]}}</td>
+                        <td>{{row[1]}}</td>
+
+                    </tr>
+                {% endfor %}        
+            </tbody>
+        </br>
+        </table>
+    </span>
+    </div> 
+    </body>
+</html>
